@@ -11,7 +11,7 @@ black:
 	@black scripts/* bbquote852/*.py
 
 test:
-	@coverage run -m pytest tests/*.py
+	@coverage run -m pytest tests/test*.py
 	@coverage report -m --omit="${VIRTUAL_ENV}/lib/python*"
 
 ftest:
